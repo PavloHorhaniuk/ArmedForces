@@ -1,0 +1,30 @@
+
+:root{
+    --font-family: "Jost", sans-serif;
+    --second-family: "Istok Web", sans-serif;
+}
+
+// $colors: (
+//     yellow: #FFB800,
+//     text: #D9D9D9,
+// );
+
+// @function getColor($key) {
+//     @return map-get($colors, $key)
+// }
+
+
+
+
+// Створення мапи з кольорами
+$colors: (
+  primary: #D9D9D9,
+  secondary: #ff5722,
+  text: #333333,
+  background: #f0f0f0
+);
+
+// Функція для отримання кольору з мапи
+@function getColor($colors) {
+  @return map-get($colors, $name);
+}

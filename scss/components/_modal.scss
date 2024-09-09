@@ -1,0 +1,92 @@
+
+// .menu-container {
+//     z-index: 10;
+//     width: 40px;
+//     position: relative;
+//     @media screen and (min-width: 1200px) {
+//         max-width: 1200px;
+//         display: none;
+//     }
+//   }
+  
+//   /* Іконка меню */
+//   .menu-icon {
+//     display: inline-block;
+//     cursor: pointer;
+//     margin: 20px;
+//   }
+  
+//   /* Іконка закриття меню */
+//   .close-icon {
+//     display: none; /* Приховати іконку закриття за замовчуванням */
+//     cursor: pointer;
+//     margin: 20px;
+//   }
+  
+//   /* Сховати чекбокс */
+//   .menu-checkbox {
+//     display: none;
+//   }
+  
+//   /* Стислий стиль меню */
+//   .dropdown-menu {
+//     position: absolute;
+//     top: 100%;
+//     right: 11%;
+//     background-color: #f0f0f0;
+//     width: 200px; /* ширина меню */
+//     max-height: 0;
+//     overflow: hidden;
+//     transition: max-height 0.5s ease-in-out;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   /* Стиль пунктів меню */
+//   .dropdown-menu ul {
+//     padding: 0;
+//     margin: 0;
+//     list-style-type: none;
+//     text-align: center;
+//   }
+  
+//   .dropdown-menu ul li {
+//     padding: 10px;
+//   }
+  
+//   .dropdown-menu ul li a {
+//     text-decoration: none;
+//     color: black;
+//     font-size: 18px;
+//   }
+  
+//   /* Відкриття меню при активації чекбоксу */
+//   .menu-checkbox:checked ~ .dropdown-menu {
+//     max-height: 400px; /* висота меню, яка дозволить всім елементам бути видимими */
+//   }
+  
+//   /* Показати іконку закриття при активації чекбоксу */
+//   .menu-checkbox:checked ~ .close-icon {
+//     display: inline-block;
+//   }
+  
+//   /* Приховати іконку меню при активації чекбоксу */
+//   .menu-checkbox:checked ~ .menu-icon {
+//     display: none;
+//   }
+  
+//   /* Анімація для іконки закриття */
+//   .close-btn {
+//     transition: opacity 0.3s ease-in-out;
+//   }
+
+//   .box-modal{
+//     display: flex;
+
+//     &__link {
+//         display: flex;
+//         font-family: var(--font-family);
+//         font-weight: 400;
+//         font-size: 24px;
+//         color: #D9D9D9;
+//     }
+// }

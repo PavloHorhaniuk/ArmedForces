@@ -1,0 +1,107 @@
+// .header {
+//     // display: flex;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//     height: 65px;
+//     background-color: #010632;
+
+//     &-nav {
+
+//         // display: flex;
+//         .nav-list {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             outline: 1px dashed black;
+
+//             &__item {
+
+//                 &--link {
+//                     font-family: var(--font-family);
+//                     font-weight: 400;
+//                     font-size: 24px;
+//                     color: getColor(secondary);
+//                 }
+
+//                 .nav-titel {
+//                     font-family: var(--second-family);
+//                     font-weight: 700;
+//                     font-size: 48px;
+//                     color: getColor(yellow);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 200px;
+    background-color: #010632;
+    @media screen and (min-width: 1200px) {
+        // max-width: 1200px;
+       display: flex;
+       height: 70px;
+    }
+
+    &-box {
+        display: flex;
+
+        // align-items: center;
+        // text-align: center;
+        // justify-content: center;
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__link {
+            display: none;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 24px;
+
+            // color: getColor('primary');
+            color: #D9D9D9;
+
+            @media screen and (min-width: 1200px) {
+                max-width: 1200px;
+               display: flex;
+               margin-right: 50px;
+            }
+            // @media screen and (min-width: 1200px) {
+            //     width: 1200px;
+            //     display: flex;
+            // }
+        }
+
+        &__titel {
+            display: flex;
+            text-align: left;
+            flex-wrap: wrap;
+            max-width:  173px;
+            // margin-right: 50px;
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 48px;
+            color: #D9D9D9;
+            @media screen and (min-width: 1200px) {
+                max-width: 1200px;
+               display: flex;
+               margin-right: 50px;
+            }
+
+            .titel-blue-span {
+                color: #0075FF;
+            }
+
+            .titel-yellow-span {
+                color: #FFC700;
+            }
+        }
+    }
+}
