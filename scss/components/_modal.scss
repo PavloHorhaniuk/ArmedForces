@@ -32,7 +32,7 @@
   .dropdown-menu {
     position: absolute;
     top: 100%;
-    right: 11%;
+    right: 10%;
     background-color: #f0f0f0;
     width: 200px; /* ширина меню */
     max-height: 0;
@@ -42,18 +42,18 @@
   }
   
   /* Стиль пунктів меню */
-  .dropdown-menu ul {
+  .dropdown-menu .nav-list {
     padding: 0;
     margin: 0;
     list-style-type: none;
     text-align: center;
   }
   
-  .dropdown-menu ul li {
+  .dropdown-menu .nav-list .nav-list__item {
     padding: 10px;
   }
   
-  .dropdown-menu ul li a {
+  .dropdown-menu .nav-list .nav-list__item .nav-list__item--link {
     text-decoration: none;
     color: black;
     font-size: 18px;
