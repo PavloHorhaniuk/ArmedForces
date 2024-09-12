@@ -38,21 +38,24 @@
     padding-top: 15px;
     padding-bottom: 15px;
     height: 70px;
+    // justify-content: center;
+    // align-items: center;
     background-color: #010632;
-    @media screen and (min-width: 1200px) {
-        // max-width: 1200px;
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
        display: flex;
        height: 70px;
     }
 
     &-box {
         display: flex;
+        justify-content: space-between;
 
         // align-items: center;
         // text-align: center;
         // justify-content: center;
-        @media screen and (min-width: 1200px) {
-            max-width: 1200px;
+        @media screen and (min-width: 1440px) {
+            max-width: 1440px;
             display: flex;
             align-items: center;
             text-align: center;
@@ -68,8 +71,8 @@
             // color: getColor('primary');
             color: #D9D9D9;
 
-            @media screen and (min-width: 1200px) {
-                max-width: 1200px;
+            @media screen and (min-width: 1440px) {
+                max-width: 1440px;
                display: flex;
                margin-right: 50px;
             }
@@ -87,14 +90,14 @@
             // margin-right: 60px;
             // flex-wrap: wrap;
             // max-width:  173px;
-            margin-right: 50px;
+            // margin-right: 100px;
             font-family: var(--second-family);
             font-weight: 700;
-            font-size: 20px;
+            font-size: 24px;
             color: #D9D9D9;
             @media screen and (min-width: 480px) {
                 max-width: 480px;
-                margin-right: 180px;
+                // margin-right: 180px;
             }
             
             @media screen and (min-width: 768px) {
@@ -103,8 +106,8 @@
                 font-size: 48px;
             }
             
-            @media screen and (min-width: 1200px) {
-                max-width: 1200px;
+            @media screen and (min-width: 1440px) {
+                max-width: 1440px;
                display: flex;
                margin-right: 50px;
                font-size: 48px;

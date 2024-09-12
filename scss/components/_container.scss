@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    min-width: 320px;
+    min-width: 360px;
     padding: 0 15px;
     margin: 0 auto;
     outline: 1px solid red;
@@ -14,8 +14,8 @@
         outline: 1px solid blue;
     }
     
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
         outline: 1px solid green;
     }
 

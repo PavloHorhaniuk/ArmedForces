@@ -34,7 +34,7 @@ button {
 
 .container {
   width: 100%;
-  min-width: 320px;
+  min-width: 360px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
@@ -50,9 +50,9 @@ button {
     outline: 1px solid blue;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
     outline: 1px solid green;
   }
 }
@@ -62,7 +62,7 @@ button {
   width: 40px;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .menu-container {
     max-width: 1200px;
     display: none;
@@ -156,18 +156,20 @@ button {
   height: 70px;
   background-color: #010632;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .header {
+    max-width: 1440px;
     display: flex;
     height: 70px;
   }
 }
 .header-box {
   display: flex;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .header-box {
-    max-width: 1200px;
+    max-width: 1440px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -181,9 +183,9 @@ button {
   font-size: 24px;
   color: #D9D9D9;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .header-box__link {
-    max-width: 1200px;
+    max-width: 1440px;
     display: flex;
     margin-right: 50px;
   }
@@ -193,16 +195,14 @@ button {
   justify-content: center;
   align-items: center;
   text-align: left;
-  margin-right: 50px;
   font-family: var(--second-family);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   color: #D9D9D9;
 }
 @media screen and (min-width: 480px) {
   .header-box__titel {
     max-width: 480px;
-    margin-right: 180px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -212,9 +212,9 @@ button {
     font-size: 48px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .header-box__titel {
-    max-width: 1200px;
+    max-width: 1440px;
     display: flex;
     margin-right: 50px;
     font-size: 48px;
@@ -225,6 +225,18 @@ button {
 }
 .header-box__titel .titel-yellow-span {
   color: #FFC700;
+}
+
+.hero {
+  background-color: gray;
+  display: flex;
+  background-size: cover;
+  width: 100%;
+  min-width: 360px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
 }
 
 :root {

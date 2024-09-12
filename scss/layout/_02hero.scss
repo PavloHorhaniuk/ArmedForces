@@ -1,0 +1,12 @@
+.hero{
+    background-color: gray;
+    // background-image: url(../image/fon.jpg);
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    min-width: 360px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+}
