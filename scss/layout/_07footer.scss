@@ -1,0 +1,67 @@
+.footer {
+    background-color: #010632;
+
+    &__titel {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .titel-blue-span {
+        color: #0075FF;
+    }
+
+    .titel-yellow-span {
+        color: #FFC700;
+    }
+
+    .policy-list {
+        width: 481px;
+
+        &__item {
+
+            &--text {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 24px;
+                // text-align: center;
+                color: white;
+            }
+
+            &--link {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 24px;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    .footer-svg-list {
+        // @include flex_JScenAIcen;
+        gap: 10px;
+    }
+    
+    .footer-list__link-svg {
+        // @include flex_JScenAIcen;
+        fill: getColor('color-white');
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        transition-property: var(--background-color), color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+    }
+    
+    .footer-list__item-svg:hover .footer-list__link-svg {
+        background-color: getColor('hover');
+    }
+
+}

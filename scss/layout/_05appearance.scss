@@ -1,0 +1,113 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     background-color: #0b0c24; /* Темний фон */
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     color: white;
+//     font-family: Arial, sans-serif;
+// }
+
+// .container {
+//     text-align: center;
+// }
+
+// .appearance__titel {
+//     font-size: 2em;
+//     margin-bottom: 20px;
+// }
+
+// /* Основна сітка для галереї зображень */
+// .gallery {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(2, 200px);
+//     grid-gap: 10px;
+//     justify-items: center;
+// }
+
+// /* Стиль для зображень */
+// .gallery-item img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+// /* Спеціальне розміщення для окремих зображень */
+// .gallery-item:nth-child(1) {
+//     grid-column: 1 / 2;
+//     grid-row: 1 / 3;
+// }
+
+// .gallery-item:nth-child(2),
+// .gallery-item:nth-child(3) {
+//     grid-column: 2 / 3;
+// }
+
+// .gallery-item:nth-child(4) {
+//     grid-column: 3 / 4;
+//     grid-row: 1 / 3;
+// }
+
+// .gallery-item:nth-child(5) {
+//     grid-column: 2 / 3;
+//     grid-row: 2 / 3;
+// }
+
+// .gallery-item:nth-child(6) {
+//     grid-column: 3 / 4;
+//     grid-row: 2 / 3;
+// }
+
+// /* Точка перелому для екранів шириною 1440px і більше */
+// @media (max-width: 1440px) {
+//     .gallery {
+//         grid-template-columns: repeat(2, 1fr); /* 2 колонки замість 3 */
+//         grid-template-rows: repeat(3, 200px);   /* 3 рядки замість 2 */
+//     }
+
+//     /* Налаштування спеціального розміщення для адаптивної сітки */
+//     .gallery-item:nth-child(1) {
+//         grid-column: 1 / 3;
+//         grid-row: 1 / 2;
+//     }
+
+//     .gallery-item:nth-child(2),
+//     .gallery-item:nth-child(3) {
+//         grid-column: 1 / 2;
+//         grid-row: auto;
+//     }
+
+//     .gallery-item:nth-child(4) {
+//         grid-column: 2 / 3;
+//         grid-row: 2 / 4;
+//     }
+
+//     .gallery-item:nth-child(5) {
+//         grid-column: 1 / 2;
+//     }
+
+//     .gallery-item:nth-child(6) {
+//         grid-column: 2 / 3;
+//         grid-row: auto;
+//     }
+// }
+
+// /* Точка перелому для екранів меншої ширини (наприклад, планшети і мобільні пристрої) */
+// @media (max-width: 768px) {
+//     .gallery {
+//         grid-template-columns: 1fr; /* 1 колонка для мобільних пристроїв */
+//         grid-template-rows: repeat(6, 200px);
+//     }
+
+//     .gallery-item {
+//         grid-column: 1 / 2;
+//         grid-row: auto;
+//     }
+// }

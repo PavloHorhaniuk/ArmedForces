@@ -91,39 +91,70 @@
     </section>
     <section class="fundraising" id="fundraising">
       <div class="container">
-        <h3 class="fundraising__titel">Про збір коштів</h3>
-        <p class="fundraising__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum
-          has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-          type and scrambled it to make a type specimen book.</p>
-        <img src="" alt="">
-        <img src="" alt="">
+        <div class="fundraising-content">
+          <div class="fundraising-box">
+            <h3 class="fundraising__titel">Про збір коштів</h3>
+            <p class="fundraising__text">
+              Збір коштів буде направлений
+              на придбання захисного спорядження, медичних приладів.
+            </p>
+          </div>
+          <div class="fundraising-img-box">
+            <img class="fundraising-img-jav" src="./image/javelin.jpg" alt="javelin">
+            <img class="fundraising-img" src="./image/kulymet.jpg" alt="kulymet">
+          </div>
+        </div>
       </div>
     </section>
     <section class="about" id="about-us">
       <div class="container">
-        <h3 class="about__titel">Про нас</h3>
-        <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-          type and scrambled it to make a type specimen book.</p>
-        <img src="" alt="">
-        <img src="" alt="">
+        <div class="about-content">
+          <div class="about-content-box-img">
+            <img src="./image/army.jpg" alt="army">
+            <img src="./image/shevron.jpg" alt="shevron" width="200" height="100">
+          </div>
+          <div class="about-content-box">
+            <h3 class="about__titel">Про нас</h3>
+            <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="appearance">
       <div class="container">
         <h2 class="appearance__titel">Якщо ми дуже допоможемо ЗСУ то наша Україно буде така</h2>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <ul class="appearance-list"></ul>
+        <li class="appearance__item"><img src="" alt=""></li>
+        <li class="appearance__item"><img src="" alt=""></li>
+        <li class="appearance__item"><img src="" alt=""></li>
+        <li class="appearance__item"><img src="" alt=""></li>
+        <li class="appearance__item"><img src="" alt=""></li>
       </div>
     </section>
     <section class="donation" id="donation">
       <div class="container">
         <h2 class="donation__titel">Проекти пожертвування на ЗСУ</h2>
+        <div class="modal-one-box">
+          <img src="" alt="">
+          <h3 class="modal-one__titel">Lorem ipsum</h3>
+          <p class="modal-one__text">Lorem Ipsum is simply</p>
+          <p class="modal-one-procent">25%</p>
+          <button class="modal-one-button" type="button" data-modal-open>Підтримати</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal is-vivible">
+                <button class="modal__btn" data-modal-close>
+                    <svg class="close-modal__svg" width="11" height="11" viewBox="0 0 11 11" fill="black"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <button class="modal-one-send">Підтримати</button>
+        </div>
       </div>
     </section>
   </main>
@@ -144,8 +175,39 @@
         </li>
       </ul>
 
+      <ul class="footer-svg-list">
+        <li class="footer-list__item-svg">
+            <a class="footer-list__link-svg" href="">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#icon-instagram_svg1"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="footer-list__item-svg">
+            <a class="footer-list__link-svg" href="">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#icon-twitter_svg1"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="footer-list__item-svg">
+            <a class="footer-list__link-svg" href="">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#icon-facebook_svg1"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="footer-list__item-svg">
+            <a class="footer-list__link-svg" href="">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#icon-linkedin_svg1"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
 
-      <ul class="svg-list">
+
+      <!-- <ul class="svg-list">
         <li class="svg-list__item">
           <a class="svg-list__item--link" href="">
             <svg width="20" height="20">
@@ -167,9 +229,11 @@
             </svg>
           </a>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </footer>
+
+  <script src="./js/modal.js"></script>
 
 </body>
 
