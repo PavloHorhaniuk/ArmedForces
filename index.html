@@ -110,8 +110,8 @@
       <div class="container">
         <div class="about-content">
           <div class="about-content-box-img">
-            <img src="./image/army.jpg" alt="army">
-            <img src="./image/shevron.jpg" alt="shevron" width="200" height="100">
+            <img class="img-army" src="./image/army.jpg" alt="army">
+            <img class="img-shevron" src="./image/shevron.jpg" alt="shevron" width="200" height="100">
           </div>
           <div class="about-content-box">
             <h3 class="about__titel">Про нас</h3>
@@ -127,35 +127,55 @@
       <div class="container">
         <h2 class="appearance__titel">Якщо ми дуже допоможемо ЗСУ то наша Україно буде така</h2>
         <ul class="appearance-list"></ul>
-        <li class="appearance__item"><img src="" alt=""></li>
-        <li class="appearance__item"><img src="" alt=""></li>
-        <li class="appearance__item"><img src="" alt=""></li>
-        <li class="appearance__item"><img src="" alt=""></li>
-        <li class="appearance__item"><img src="" alt=""></li>
+        <li class="appearance__item"><img src="./image/Rectangle 32.png" alt="" width="364px" height="264px"></li>
+        <li class="appearance__item"><img src="./image/Rectangle 33.png" alt="" width="264px" height="261px"></li>
+        <li class="appearance__item"><img src="./image/Rectangle 34.png" alt="" width="364px" height="549px"></li>
+        <li class="appearance__item"><img src="./image/Rectangle 35.png" alt="" width="465px" height="264px"></li>
+        <li class="appearance__item"><img src="./image/Rectangle 36.png" alt="" width="364px" height="114px"></li>
+        <li class="appearance__item"><img src="./image/Rectangle 37.png" alt="" width="364px" height="129px"></li>
       </div>
     </section>
     <section class="donation" id="donation">
       <div class="container">
         <h2 class="donation__titel">Проекти пожертвування на ЗСУ</h2>
         <div class="modal-one-box">
-          <img src="" alt="">
+          <img class="img-gas" src="./image/gas.jpg" alt="gas">
           <h3 class="modal-one__titel">Lorem ipsum</h3>
           <p class="modal-one__text">Lorem Ipsum is simply</p>
           <p class="modal-one-procent">25%</p>
+          <div class="modal-one-scale">
+            <div class="modal-one-scale__yellow"> </div>
+          </div>
           <button class="modal-one-button" type="button" data-modal-open>Підтримати</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal is-vivible">
-                <button class="modal__btn" data-modal-close>
-                    <svg class="close-modal__svg" width="11" height="11" viewBox="0 0 11 11" fill="black"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
-                            fill="black" />
-                    </svg>
-                </button>
-                <button class="modal-one-send">Підтримати</button>
-        </div>
-      </div>
+              <button class="modal__btn" data-modal-close>
+                <svg class="close-modal__svg" width="11" height="11" viewBox="0 0 11 11" fill="black"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                    fill="black" />
+                </svg>
+              </button>
+              <div class="modal-box">
+                <form class="modal-one-form">
+                  <label class="modal-one-label__email" for="user_email">Email</label>
+                  <input class="modal-one-input__email" type="email" name="Email" id="user_email" />
+
+                  <label class="modal-one-label__money" for="money">Money</label>
+                  <input class="modal-one-input__money" type="money" name="Money" id="money" />
+
+                  <label class="modal-one-label__card" for="card">Card</label>
+                  <input class="modal-one-input__card" type="card" name="Card" id="card" />
+                </form>
+                <div class="modal-one-img-box">
+                  <img class="modal-img-gas" src="./image/gas.jpg" alt="gas">
+                </div>
+              
+              <button class="modal-one-send">Підтримати</button>
+            </div>
+            </div>
+          </div>
     </section>
   </main>
 
@@ -177,34 +197,27 @@
 
       <ul class="footer-svg-list">
         <li class="footer-list__item-svg">
-            <a class="footer-list__link-svg" href="">
-                <svg width="20" height="20">
-                    <use href="./images/symboldefs.svg#icon-instagram_svg1"></use>
-                </svg>
-            </a>
+          <a class="footer-list__link-svg" href="">
+            <svg width="37" height="37">
+              <use href="./image/inst-svg.svg"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-list__item-svg">
-            <a class="footer-list__link-svg" href="">
-                <svg width="20" height="20">
-                    <use href="./images/symboldefs.svg#icon-twitter_svg1"></use>
-                </svg>
-            </a>
+          <a class="footer-list__link-svg" href="">
+            <svg width="28" height="37">
+              <use href="./image/facebook-svg.svg"></use>
+            </svg>
+          </a>
         </li>
         <li class="footer-list__item-svg">
-            <a class="footer-list__link-svg" href="">
-                <svg width="20" height="20">
-                    <use href="./images/symboldefs.svg#icon-facebook_svg1"></use>
-                </svg>
-            </a>
+          <a class="footer-list__link-svg" href="">
+            <svg width="37" height="36">
+              <use href="./image/twit-svg.svg"></use>
+            </svg>
+          </a>
         </li>
-        <li class="footer-list__item-svg">
-            <a class="footer-list__link-svg" href="">
-                <svg width="20" height="20">
-                    <use href="./images/symboldefs.svg#icon-linkedin_svg1"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
+      </ul>
 
 
       <!-- <ul class="svg-list">

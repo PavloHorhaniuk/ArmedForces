@@ -3,8 +3,11 @@
 
   // height: 461px;
   &-content {
-    display: block;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    justify-content: space-between;
+    // justify-content: space-around;
 
     @media screen and (min-width: 480px) {
       max-width: 480px;
@@ -20,8 +23,9 @@
 
     .fundraising-box {
       // display: inline;
-      display: block;
-      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: center;
       padding-top: 15px;
       margin-bottom: 30px;
 
@@ -45,6 +49,7 @@
         // font-size: 48px;
         color: #fff;
         display: flex;
+        text-align: left;
         // justify-content: center;
         margin-bottom: 10px;
 
@@ -56,6 +61,8 @@
         @media screen and (min-width: 1440px) {
           max-width: 1440px;
           display: flex;
+          // text-align: left;
+          justify-content: center;
           font-size: 48px;
           margin-bottom: 10px;
         }
@@ -68,8 +75,9 @@
         min-width: 150px;
         color: #fff;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
+        // text-align: center;
 
         // min-width: 150px;
         flex-wrap: wrap;
@@ -90,10 +98,10 @@
     }
 
     .fundraising-img-box {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // text-align: center;
+      // align-items: center;
       // width: 665px;
       // height: 364px;
       padding-bottom: 30px;
@@ -102,7 +110,7 @@
 
       @media screen and (min-width: 480px) {
         max-width: 480px;
-        display: block;
+        // display: block;
       }
 
       @media screen and (min-width: 1440px) {
@@ -116,6 +124,8 @@
     }
 
       .fundraising-img-jav{
+        display: flex;
+        // justify-content: space-between;
         // margin-bottom: 100px;
         // width: 250px;
         // height: 150px;
@@ -134,16 +144,17 @@
       }
 
       .fundraising-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: none;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // text-align: center;
         // margin-top: 160px;
         // padding-left: 100px;
 
         @media screen and (min-width: 480px) {
           max-width: 480px;
-          display: flex;
+          // display: flex;
           // padding-left: 185px;
         }
 

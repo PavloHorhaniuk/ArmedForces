@@ -2,14 +2,76 @@
     background-color: #060D49;
 
     &-content {
+        // display: block;
+        // justify-content: center;
+        // text-align: center;
+        // align-items: center;
+
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: 1440px) {
+            max-width: 1440px;
+            display: flex;
+            //   justify-content: center;
+        }
 
         &-box-img {
-            display: flex;
+            // display: flex;
+            // justify-content: space-between;
+            // text-align: center;
+            // align-items: center;
+
+            @media screen and (min-width: 480px) {
+                max-width: 480px;
+                // display: flex;
+            }
+
+            @media screen and (min-width: 1440px) {
+                max-width: 1440px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 665px;
+                height: 364px;
+                gap: 35px;
+                // margin-top: 32px;
+                // margin-bottom: 58px;
+            }
+
+            .img-army {
+
+                @media screen and (min-width: 480px) {
+                    max-width: 480px;
+                    // display: flex;
+                    padding-left: 100px;
+                }
+            }
+
+            .img-shevron {
+                display: none;
+                // text-align: left;
+                // align-items: flex-end;
+
+                @media screen and (min-width: 1440px) {
+                    max-width: 1440px;
+                    display: flex;
+                    // padding-left: 100px;
+                }
+            }
         }
 
         &-box {
             display: flex;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: 1440px) {
+                max-width: 1440px;
+                display: inline;
+                margin-top: 32px;
+                margin-right: 85px;
+            }
 
             .about__titel {
                 display: flex;
