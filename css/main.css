@@ -489,6 +489,13 @@ button {
 }
 .footer .policy-list {
   width: 481px;
+  margin-right: 320px;
+}
+@media screen and (min-width: 1440px) {
+  .footer .policy-list {
+    max-width: 1440px;
+    margin-right: 320px;
+  }
 }
 .footer .policy-list__item--text {
   font-family: var(--font-family);
@@ -619,8 +626,6 @@ button {
   top: 50%;
   left: 50%;
   border-radius: 21px;
-  width: 1005px;
-  height: 600px;
   /* padding: 15px; */
   border-radius: 4px;
   background-color: #fff;
@@ -628,6 +633,11 @@ button {
   opacity: 1;
   transform: translate(-50%, -50%) scale(0.7);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1440px) {
+  .modal {
+    max-width: 1440px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -657,19 +667,26 @@ button {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
-  position: absolute;
   top: 85%;
   right: 74%;
   border-radius: 15px;
-  width: 235px;
-  height: 61px;
-  margin-left: 55PX;
+  width: 172px;
+  height: 48px;
+  margin-left: 55px;
   color: #fff;
   background: #0057ff;
 }
+@media screen and (min-width: 1440px) {
+  .modal-one-send {
+    max-width: 1440px;
+    position: absolute;
+    width: 235px;
+    height: 61px;
+  }
+}
 
 .modal-one-form {
-  display: block;
+  display: inline;
 }
 
 .modal-one-label__email,
@@ -681,8 +698,15 @@ button {
   font-size: 24px;
   height: 35px;
   text-align: center;
-  text-align: center;
   color: #7c7c7c;
+}
+@media screen and (min-width: 1440px) {
+  .modal-one-label__email,
+  .modal-one-label__money,
+  .modal-one-label__card {
+    max-width: 1440px;
+    display: flex;
+  }
 }
 
 .modal-one-input__email,
@@ -690,26 +714,49 @@ button {
 .modal-one-input__card {
   display: flex;
   border-radius: 15px;
-  width: 519px;
+  width: 306px;
   height: 57px;
   direction: none;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1440px) {
+  .modal-one-input__email,
+  .modal-one-input__money,
+  .modal-one-input__card {
+    max-width: 1440px;
+    display: flex;
+    width: 519px;
+  }
+}
 
 .modal-img-gas {
-  display: flex;
-  width: 335px;
-  height: 446px;
+  display: block;
+  width: 105px;
+  height: 126px;
+}
+@media screen and (min-width: 1440px) {
+  .modal-img-gas {
+    max-width: 1440px;
+    display: flex;
+    width: 335px;
+    height: 446px;
+  }
 }
 
 .modal-box {
   display: flex;
-  justify-content: space-between;
-  position: relative;
   margin-top: 30px;
   margin-left: 55px;
   margin-right: 55px;
   margin-bottom: 114px;
+}
+@media screen and (min-width: 1440px) {
+  .modal-box {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .modal-two-box {
