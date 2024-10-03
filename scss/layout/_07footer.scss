@@ -1,5 +1,13 @@
 .footer {
     background-color: #010632;
+    
+    &-box{
+
+        @media screen and (min-width: 1440px) {
+            max-width: 1440px;
+            display: flex;
+        }
+    }
 
     &__titel {
         font-family: var(--second-family);
@@ -17,6 +25,15 @@
 
     .titel-yellow-span {
         color: #FFC700;
+    }
+
+    .policy-box{
+        display: flex;
+
+        @media screen and (min-width: 1440px) {
+            max-width: 1440px;
+            margin-left: 138px;
+        }
     }
 
     .policy-list {
@@ -40,6 +57,10 @@
                 color: white;
             }
         }
+    }
+
+    .svg-box{
+        display: flex;
     }
 
     .footer-svg-list {
@@ -69,5 +90,5 @@
     // .footer-list__item-svg:hover .footer-list__link-svg {
     //     background-color: getColor('hover');
     // }
-
+    
 }
